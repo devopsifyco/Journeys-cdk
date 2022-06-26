@@ -30,6 +30,11 @@
     "@aws-cdk/core:target-partitions": [
       "aws",
       "aws-cn"
-    ]
+    ],
+    "dev": {
+      "projectOwner": "Quan.devopsify",
+      "projectName": "cdk-learning",
+      "costOwner": "huyntt.devopsify"
+    }
   }
 }
