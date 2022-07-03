@@ -1,2 +1,3 @@
 import { Vpc } from './vpc';
-export { Vpc };
+import { SN } from './subnet';
+export { Vpc, SN };

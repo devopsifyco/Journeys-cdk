@@ -2,5 +2,9 @@
   "availability-zones:account=034666365655:region=us-west-1": [
     "us-west-1a",
     "us-west-1c"
+  ],
+  "availability-zones:account=973254439305:region=us-west-1": [
+    "us-west-1a",
+    "us-west-1b"
   ]
 }
