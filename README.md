@@ -1,14 +1,24 @@
+```
+   ___                                                     _ _    
+  |_  |                                                   | | |   
+    | | ___  _   _ _ __ _ __   ___ _   _ ___ ______ ___ __| | | __
+    | |/ _ \| | | | '__| '_ \ / _ \ | | / __|______/ __/ _` | |/ /
+/\__/ / (_) | |_| | |  | | | |  __/ |_| \__ \     | (_| (_| |   < 
+\____/ \___/ \__,_|_|  |_| |_|\___|\__, |___/      \___\__,_|_|\_\
+                                    __/ |                         
+                                   |___/                          
+```
+
+
+
 # Welcome to your CDK TypeScript project
 
-This is a blank project for CDK development with TypeScript.
+This is a project for CDK development with TypeScript.
 
-The `cdk.json` file tells the CDK Toolkit how to execute your app.
-
-## Useful commands
-
-* `npm run build`   compile typescript to js
-* `npm run watch`   watch for changes and compile
-* `npm run test`    perform the jest unit tests
-* `cdk deploy`      deploy this stack to your default AWS account/region
-* `cdk diff`        compare deployed stack with current state
-* `cdk synth`       emits the synthesized CloudFormation template
+# A product of devopsify
+| No  | Article  | GitHub  |
+|:----------|:----------|:----------|
+| 1    | [Cloud Development Kit (CDK) là gì?](https://devopsify.co/cloud-development-kit-cdk/)  | [git](https://github.com/devopsifyco/Journeys-cdk/tree/1.first-time) |
+| 2    | [Tạo VPC với constructor L1 trong CDK](https://devopsify.co/tao-vpc-voi-constructor-l1-trong-cdk/)    | [git](https://github.com/devopsifyco/Journeys-cdk/tree/2.vpc)    |
+| 3    | [Cấu hình đa môi trường cho CDK app](https://devopsify.co/cau-hinh-da-moi-truong-cho-cdk-app/)    | [git](https://github.com/devopsifyco/Journeys-cdk/tree/3.config-env)    |
+| 4    | [Tạo subnet trong CDK](https://github.com/devopsifyco/Journeys-cdk/tree/4.subnet)    | [git](https://github.com/devopsifyco/Journeys-cdk/tree/4.subnet)    |
