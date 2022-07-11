@@ -1,16 +1,27 @@
-// import * as cdk from 'aws-cdk-lib';
-// import { Template } from 'aws-cdk-lib/assertions';
-// import * as HelloCkd from '../lib/hello-ckd-stack';
+import { Template } from '@aws-cdk/assertions-alpha';
+import * as cdk from 'aws-cdk-lib';
+import { HelloCkdStack } from '../lib/hello-ckd-stack';
 
-// example test. To run these tests, uncomment this file along with the
-// example resource in lib/hello-ckd-stack.ts
-test('SQS Queue Created', () => {
-    //   const app = new cdk.App();
-    //     // WHEN
-    //   const stack = new HelloCkd.HelloCkdStack(app, 'MyTestStack');
-    //     // THEN
-    //   const template = Template.fromStack(stack);
-    //   template.hasResourceProperties('AWS::SQS::Queue', {
-    //     VisibilityTimeout: 300
-    //   });
+const env = {
+    account: process.env.CDK_DEFAULT_ACCOUNT,
+    region: process.env.CDK_DEFAULT_REGION,
+};
+
+const app = new cdk.App({
+    context: {
+        config: 'dev',
+        dev: {
+            projectOwner: 'Quan.devopsify',
+            projectName: 'cdk-learning',
+            costOwner: 'huyntt.devopsify',
+        },
+    },
+});
+
+const mainStack = new HelloCkdStack(app, `CdkStarterStack`, { env });
+
+describe('MainStack', () => {
+    test('snapshot MainStack', () => {
+        expect(Template.fromStack(mainStack)).toMatchSnapshot();
+    });
 });
