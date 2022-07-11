@@ -22,3 +22,4 @@ This is a project for CDK development with TypeScript.
 | 2    | [Tạo VPC với constructor L1 trong CDK](https://devopsify.co/tao-vpc-voi-constructor-l1-trong-cdk/)    | [git](https://github.com/devopsifyco/Journeys-cdk/tree/2.vpc)    |
 | 3    | [Cấu hình đa môi trường cho CDK app](https://devopsify.co/cau-hinh-da-moi-truong-cho-cdk-app/)    | [git](https://github.com/devopsifyco/Journeys-cdk/tree/3.config-env)    |
 | 4    | [Tạo subnet trong CDK](https://github.com/devopsifyco/Journeys-cdk/tree/4.subnet)    | [git](https://github.com/devopsifyco/Journeys-cdk/tree/4.subnet)    |
+| 5    | [Snapshot test trong CDK](https://devopsify.co/snapshot-test-trong-cdk/)    | [git](https://github.com/devopsifyco/Journeys-cdk/tree/5.snapshot-test)    |
