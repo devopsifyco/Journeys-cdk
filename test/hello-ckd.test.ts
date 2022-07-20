@@ -1,5 +1,5 @@
-import { Template } from '@aws-cdk/assertions-alpha';
 import * as cdk from 'aws-cdk-lib';
+import { Match, Template } from 'aws-cdk-lib/assertions';
 import { HelloCkdStack } from '../lib/hello-ckd-stack';
 
 const env = {
@@ -20,8 +20,22 @@ const app = new cdk.App({
 
 const mainStack = new HelloCkdStack(app, `CdkStarterStack`, { env });
 
-describe('MainStack', () => {
-    test('snapshot MainStack', () => {
-        expect(Template.fromStack(mainStack)).toMatchSnapshot();
-    });
+test('snapshot has not changed', () => {
+    expect(Template.fromStack(mainStack)).toMatchSnapshot();
+});
+test('VPC Exists with correct CIDR and Tags', () => {
+    expect(
+        Template.fromStack(mainStack).hasResourceProperties('AWS::EC2::VPC', {
+            CidrBlock: '10.90.16.0/22',
+            Tags: [
+                {
+                    Key: 'Name',
+                    Value: 'cdk-learning-dev-network-vpc',
+                },
+            ],
+        }),
+    );
+});
+test('total 26 subnet', () => {
+    expect(Template.fromStack(mainStack).resourceCountIs('AWS::EC2::Subnet', 26));
 });
