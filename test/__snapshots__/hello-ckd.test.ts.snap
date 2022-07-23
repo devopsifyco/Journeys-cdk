@@ -497,3 +497,523 @@ Object {
   },
 }
 `;
+
+exports[`snapshot has not changed 1`] = `
+Object {
+  "Parameters": Object {
+    "BootstrapVersion": Object {
+      "Default": "/cdk-bootstrap/hnb659fds/version",
+      "Description": "Version of the CDK Bootstrap resources in this environment, automatically retrieved from SSM Parameter Store. [cdk:skip]",
+      "Type": "AWS::SSM::Parameter::Value<String>",
+    },
+  },
+  "Resources": Object {
+    "AdminSubnet1a": Object {
+      "Properties": Object {
+        "AvailabilityZone": "dummy1a",
+        "CidrBlock": "10.90.16.160/28",
+        "MapPublicIpOnLaunch": false,
+        "Tags": Array [
+          Object {
+            "Key": "Name",
+            "Value": "cdk-learning-dev-network-admin-subnet-1a",
+          },
+        ],
+        "VpcId": Object {
+          "Ref": "VPC",
+        },
+      },
+      "Type": "AWS::EC2::Subnet",
+    },
+    "AdminSubnet1c": Object {
+      "Properties": Object {
+        "AvailabilityZone": "dummy1b",
+        "CidrBlock": "10.90.16.176/28",
+        "MapPublicIpOnLaunch": false,
+        "Tags": Array [
+          Object {
+            "Key": "Name",
+            "Value": "cdk-learning-dev-network-admin-subnet-1c",
+          },
+        ],
+        "VpcId": Object {
+          "Ref": "VPC",
+        },
+      },
+      "Type": "AWS::EC2::Subnet",
+    },
+    "AdmindbSubnet1a": Object {
+      "Properties": Object {
+        "AvailabilityZone": "dummy1a",
+        "CidrBlock": "10.90.16.96/28",
+        "MapPublicIpOnLaunch": false,
+        "Tags": Array [
+          Object {
+            "Key": "Name",
+            "Value": "cdk-learning-dev-network-admindb-subnet-1a",
+          },
+        ],
+        "VpcId": Object {
+          "Ref": "VPC",
+        },
+      },
+      "Type": "AWS::EC2::Subnet",
+    },
+    "AdmindbSubnet1c": Object {
+      "Properties": Object {
+        "AvailabilityZone": "dummy1b",
+        "CidrBlock": "10.90.16.112/28",
+        "MapPublicIpOnLaunch": false,
+        "Tags": Array [
+          Object {
+            "Key": "Name",
+            "Value": "cdk-learning-dev-network-admindb-subnet-1c",
+          },
+        ],
+        "VpcId": Object {
+          "Ref": "VPC",
+        },
+      },
+      "Type": "AWS::EC2::Subnet",
+    },
+    "CommonServicesSubnet1a": Object {
+      "Properties": Object {
+        "AvailabilityZone": "dummy1a",
+        "CidrBlock": "10.90.17.128/28",
+        "MapPublicIpOnLaunch": false,
+        "Tags": Array [
+          Object {
+            "Key": "Name",
+            "Value": "cdk-learning-dev-network-common-services-subnet-1a",
+          },
+        ],
+        "VpcId": Object {
+          "Ref": "VPC",
+        },
+      },
+      "Type": "AWS::EC2::Subnet",
+    },
+    "CommonServicesSubnet1c": Object {
+      "Properties": Object {
+        "AvailabilityZone": "dummy1b",
+        "CidrBlock": "10.90.17.144/28",
+        "MapPublicIpOnLaunch": false,
+        "Tags": Array [
+          Object {
+            "Key": "Name",
+            "Value": "cdk-learning-dev-network-common-services-subnet-1c",
+          },
+        ],
+        "VpcId": Object {
+          "Ref": "VPC",
+        },
+      },
+      "Type": "AWS::EC2::Subnet",
+    },
+    "InternetGateway": Object {
+      "Properties": Object {
+        "Tags": Array [
+          Object {
+            "Key": "Name",
+            "Value": "cdk-learning-dev-network-igw",
+          },
+        ],
+      },
+      "Type": "AWS::EC2::InternetGateway",
+    },
+    "MobileSubnet1a": Object {
+      "Properties": Object {
+        "AvailabilityZone": "dummy1a",
+        "CidrBlock": "10.90.16.192/28",
+        "MapPublicIpOnLaunch": false,
+        "Tags": Array [
+          Object {
+            "Key": "Name",
+            "Value": "cdk-learning-dev-network-mobile-subnet-1a",
+          },
+        ],
+        "VpcId": Object {
+          "Ref": "VPC",
+        },
+      },
+      "Type": "AWS::EC2::Subnet",
+    },
+    "MobileSubnet1c": Object {
+      "Properties": Object {
+        "AvailabilityZone": "dummy1b",
+        "CidrBlock": "10.90.16.208/28",
+        "MapPublicIpOnLaunch": false,
+        "Tags": Array [
+          Object {
+            "Key": "Name",
+            "Value": "cdk-learning-dev-network-mobile-subnet-1c",
+          },
+        ],
+        "VpcId": Object {
+          "Ref": "VPC",
+        },
+      },
+      "Type": "AWS::EC2::Subnet",
+    },
+    "MobilecachedbSubnet1a": Object {
+      "Properties": Object {
+        "AvailabilityZone": "dummy1a",
+        "CidrBlock": "10.90.16.64/28",
+        "MapPublicIpOnLaunch": false,
+        "Tags": Array [
+          Object {
+            "Key": "Name",
+            "Value": "cdk-learning-dev-network-mobilecachedb-subnet-1a",
+          },
+        ],
+        "VpcId": Object {
+          "Ref": "VPC",
+        },
+      },
+      "Type": "AWS::EC2::Subnet",
+    },
+    "MobilecachedbSubnet1c": Object {
+      "Properties": Object {
+        "AvailabilityZone": "dummy1b",
+        "CidrBlock": "10.90.16.80/28",
+        "MapPublicIpOnLaunch": false,
+        "Tags": Array [
+          Object {
+            "Key": "Name",
+            "Value": "cdk-learning-dev-network-mobilecachedb-subnet-1c",
+          },
+        ],
+        "VpcId": Object {
+          "Ref": "VPC",
+        },
+      },
+      "Type": "AWS::EC2::Subnet",
+    },
+    "PublicSubnet1a": Object {
+      "Properties": Object {
+        "AvailabilityZone": "dummy1a",
+        "CidrBlock": "10.90.16.0/28",
+        "MapPublicIpOnLaunch": false,
+        "Tags": Array [
+          Object {
+            "Key": "Name",
+            "Value": "cdk-learning-dev-network-public-subnet-1a",
+          },
+        ],
+        "VpcId": Object {
+          "Ref": "VPC",
+        },
+      },
+      "Type": "AWS::EC2::Subnet",
+    },
+    "PublicSubnet1c": Object {
+      "Properties": Object {
+        "AvailabilityZone": "dummy1b",
+        "CidrBlock": "10.90.16.16/28",
+        "MapPublicIpOnLaunch": false,
+        "Tags": Array [
+          Object {
+            "Key": "Name",
+            "Value": "cdk-learning-dev-network-public-subnet-1c",
+          },
+        ],
+        "VpcId": Object {
+          "Ref": "VPC",
+        },
+      },
+      "Type": "AWS::EC2::Subnet",
+    },
+    "RegisterSubnet1a": Object {
+      "Properties": Object {
+        "AvailabilityZone": "dummy1a",
+        "CidrBlock": "10.90.16.128/28",
+        "MapPublicIpOnLaunch": false,
+        "Tags": Array [
+          Object {
+            "Key": "Name",
+            "Value": "cdk-learning-dev-network-register-subnet-1a",
+          },
+        ],
+        "VpcId": Object {
+          "Ref": "VPC",
+        },
+      },
+      "Type": "AWS::EC2::Subnet",
+    },
+    "RegisterSubnet1c": Object {
+      "Properties": Object {
+        "AvailabilityZone": "dummy1b",
+        "CidrBlock": "10.90.16.144/28",
+        "MapPublicIpOnLaunch": false,
+        "Tags": Array [
+          Object {
+            "Key": "Name",
+            "Value": "cdk-learning-dev-network-register-subnet-1c",
+          },
+        ],
+        "VpcId": Object {
+          "Ref": "VPC",
+        },
+      },
+      "Type": "AWS::EC2::Subnet",
+    },
+    "VPC": Object {
+      "Properties": Object {
+        "CidrBlock": "10.90.16.0/22",
+        "EnableDnsHostnames": true,
+        "EnableDnsSupport": true,
+        "InstanceTenancy": "default",
+        "Tags": Array [
+          Object {
+            "Key": "Name",
+            "Value": "cdk-learning-dev-network-vpc",
+          },
+        ],
+      },
+      "Type": "AWS::EC2::VPC",
+    },
+    "VPCGatewayAttachment": Object {
+      "Properties": Object {
+        "InternetGatewayId": Object {
+          "Ref": "InternetGateway",
+        },
+        "VpcId": Object {
+          "Ref": "VPC",
+        },
+      },
+      "Type": "AWS::EC2::VPCGatewayAttachment",
+    },
+    "VitalJobSubnet1a": Object {
+      "Properties": Object {
+        "AvailabilityZone": "dummy1a",
+        "CidrBlock": "10.90.17.96/28",
+        "MapPublicIpOnLaunch": false,
+        "Tags": Array [
+          Object {
+            "Key": "Name",
+            "Value": "cdk-learning-dev-network-vital-job-subnet-1a",
+          },
+        ],
+        "VpcId": Object {
+          "Ref": "VPC",
+        },
+      },
+      "Type": "AWS::EC2::Subnet",
+    },
+    "VitalJobSubnet1c": Object {
+      "Properties": Object {
+        "AvailabilityZone": "dummy1b",
+        "CidrBlock": "10.90.17.112/28",
+        "MapPublicIpOnLaunch": false,
+        "Tags": Array [
+          Object {
+            "Key": "Name",
+            "Value": "cdk-learning-dev-network-vital-job-subnet-1c",
+          },
+        ],
+        "VpcId": Object {
+          "Ref": "VPC",
+        },
+      },
+      "Type": "AWS::EC2::Subnet",
+    },
+    "VitalParsingSubnet1a": Object {
+      "Properties": Object {
+        "AvailabilityZone": "dummy1a",
+        "CidrBlock": "10.90.17.32/28",
+        "MapPublicIpOnLaunch": false,
+        "Tags": Array [
+          Object {
+            "Key": "Name",
+            "Value": "cdk-learning-dev-network-vital-parsing-subnet-1a",
+          },
+        ],
+        "VpcId": Object {
+          "Ref": "VPC",
+        },
+      },
+      "Type": "AWS::EC2::Subnet",
+    },
+    "VitalParsingSubnet1c": Object {
+      "Properties": Object {
+        "AvailabilityZone": "dummy1b",
+        "CidrBlock": "10.90.17.48/28",
+        "MapPublicIpOnLaunch": false,
+        "Tags": Array [
+          Object {
+            "Key": "Name",
+            "Value": "cdk-learning-dev-network-vital-parsing-subnet-1c",
+          },
+        ],
+        "VpcId": Object {
+          "Ref": "VPC",
+        },
+      },
+      "Type": "AWS::EC2::Subnet",
+    },
+    "VitalRawSubnet1a": Object {
+      "Properties": Object {
+        "AvailabilityZone": "dummy1a",
+        "CidrBlock": "10.90.17.64/28",
+        "MapPublicIpOnLaunch": false,
+        "Tags": Array [
+          Object {
+            "Key": "Name",
+            "Value": "cdk-learning-dev-network-vital-raw-subnet-1a",
+          },
+        ],
+        "VpcId": Object {
+          "Ref": "VPC",
+        },
+      },
+      "Type": "AWS::EC2::Subnet",
+    },
+    "VitalRawSubnet1c": Object {
+      "Properties": Object {
+        "AvailabilityZone": "dummy1b",
+        "CidrBlock": "10.90.17.80/28",
+        "MapPublicIpOnLaunch": false,
+        "Tags": Array [
+          Object {
+            "Key": "Name",
+            "Value": "cdk-learning-dev-network-vital-raw-subnet-1c",
+          },
+        ],
+        "VpcId": Object {
+          "Ref": "VPC",
+        },
+      },
+      "Type": "AWS::EC2::Subnet",
+    },
+    "VitalTransformSubnet1a": Object {
+      "Properties": Object {
+        "AvailabilityZone": "dummy1a",
+        "CidrBlock": "10.90.17.0/28",
+        "MapPublicIpOnLaunch": false,
+        "Tags": Array [
+          Object {
+            "Key": "Name",
+            "Value": "cdk-learning-dev-network-vital-transform-subnet-1a",
+          },
+        ],
+        "VpcId": Object {
+          "Ref": "VPC",
+        },
+      },
+      "Type": "AWS::EC2::Subnet",
+    },
+    "VitalTransformSubnet1c": Object {
+      "Properties": Object {
+        "AvailabilityZone": "dummy1b",
+        "CidrBlock": "10.90.17.16/28",
+        "MapPublicIpOnLaunch": false,
+        "Tags": Array [
+          Object {
+            "Key": "Name",
+            "Value": "cdk-learning-dev-network-vital-transform-subnet-1c",
+          },
+        ],
+        "VpcId": Object {
+          "Ref": "VPC",
+        },
+      },
+      "Type": "AWS::EC2::Subnet",
+    },
+    "VitaldbSubnet1a": Object {
+      "Properties": Object {
+        "AvailabilityZone": "dummy1a",
+        "CidrBlock": "10.90.16.32/28",
+        "MapPublicIpOnLaunch": false,
+        "Tags": Array [
+          Object {
+            "Key": "Name",
+            "Value": "cdk-learning-dev-network-vitaldb-subnet-1a",
+          },
+        ],
+        "VpcId": Object {
+          "Ref": "VPC",
+        },
+      },
+      "Type": "AWS::EC2::Subnet",
+    },
+    "VitaldbSubnet1c": Object {
+      "Properties": Object {
+        "AvailabilityZone": "dummy1b",
+        "CidrBlock": "10.90.16.48/28",
+        "MapPublicIpOnLaunch": false,
+        "Tags": Array [
+          Object {
+            "Key": "Name",
+            "Value": "cdk-learning-dev-network-vitaldb-subnet-1c",
+          },
+        ],
+        "VpcId": Object {
+          "Ref": "VPC",
+        },
+      },
+      "Type": "AWS::EC2::Subnet",
+    },
+    "VitalwebhookSubnet1a": Object {
+      "Properties": Object {
+        "AvailabilityZone": "dummy1a",
+        "CidrBlock": "10.90.16.224/28",
+        "MapPublicIpOnLaunch": false,
+        "Tags": Array [
+          Object {
+            "Key": "Name",
+            "Value": "cdk-learning-dev-network-vitalwebhook-subnet-1a",
+          },
+        ],
+        "VpcId": Object {
+          "Ref": "VPC",
+        },
+      },
+      "Type": "AWS::EC2::Subnet",
+    },
+    "VitalwebhookSubnet1c": Object {
+      "Properties": Object {
+        "AvailabilityZone": "dummy1b",
+        "CidrBlock": "10.90.16.240/28",
+        "MapPublicIpOnLaunch": false,
+        "Tags": Array [
+          Object {
+            "Key": "Name",
+            "Value": "cdk-learning-dev-network-vitalwebhook-subnet-1c",
+          },
+        ],
+        "VpcId": Object {
+          "Ref": "VPC",
+        },
+      },
+      "Type": "AWS::EC2::Subnet",
+    },
+  },
+  "Rules": Object {
+    "CheckBootstrapVersion": Object {
+      "Assertions": Array [
+        Object {
+          "Assert": Object {
+            "Fn::Not": Array [
+              Object {
+                "Fn::Contains": Array [
+                  Array [
+                    "1",
+                    "2",
+                    "3",
+                    "4",
+                    "5",
+                  ],
+                  Object {
+                    "Ref": "BootstrapVersion",
+                  },
+                ],
+              },
+            ],
+          },
+          "AssertDescription": "CDK bootstrap stack version 6 required. Please run 'cdk bootstrap' with a recent version of the CDK CLI.",
+        },
+      ],
+    },
+  },
+}
+`;
