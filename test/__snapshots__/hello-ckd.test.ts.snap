@@ -112,6 +112,17 @@ Object {
       },
       "Type": "AWS::EC2::Subnet",
     },
+    "InternetGateway": Object {
+      "Properties": Object {
+        "Tags": Array [
+          Object {
+            "Key": "Name",
+            "Value": "cdk-learning-dev-network-igw",
+          },
+        ],
+      },
+      "Type": "AWS::EC2::InternetGateway",
+    },
     "MobileSubnet1a": Object {
       "Properties": Object {
         "AvailabilityZone": "dummy1a",
@@ -262,6 +273,17 @@ Object {
         ],
       },
       "Type": "AWS::EC2::VPC",
+    },
+    "VPCGatewayAttachment": Object {
+      "Properties": Object {
+        "InternetGatewayId": Object {
+          "Ref": "InternetGateway",
+        },
+        "VpcId": Object {
+          "Ref": "VPC",
+        },
+      },
+      "Type": "AWS::EC2::VPCGatewayAttachment",
     },
     "VitalJobSubnet1a": Object {
       "Properties": Object {
