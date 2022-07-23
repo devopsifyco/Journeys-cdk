@@ -23,3 +23,4 @@ This is a project for CDK development with TypeScript.
 | 3    | [Cấu hình đa môi trường cho CDK app](https://devopsify.co/cau-hinh-da-moi-truong-cho-cdk-app/)    | [git](https://github.com/devopsifyco/Journeys-cdk/tree/3.config-env)    |
 | 4    | [Tạo subnet trong CDK](https://github.com/devopsifyco/Journeys-cdk/tree/4.subnet)    | [git](https://github.com/devopsifyco/Journeys-cdk/tree/4.subnet)    |
 | 5    | [Snapshot test trong CDK](https://devopsify.co/snapshot-test-trong-cdk/)    | [git](https://github.com/devopsifyco/Journeys-cdk/tree/5.snapshot-test)    |
+| 6    | [Tạo internet gateway trong CDK](https://devopsify.co/tao-internet-gateway-trong-cdk/)    | [git](https://github.com/devopsifyco/Journeys-cdk/tree/6.igw)    |
