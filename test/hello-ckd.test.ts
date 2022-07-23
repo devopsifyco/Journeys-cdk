@@ -20,6 +20,7 @@ const app = new cdk.App({
 
 const mainStack = new HelloCkdStack(app, `CdkStarterStack`, { env });
 
+<<<<<<< refs/remotes/origin/main
 test('snapshot has not changed', () => {
     expect(Template.fromStack(mainStack)).toMatchSnapshot();
 });
@@ -38,4 +39,10 @@ test('VPC Exists with correct CIDR and Tags', () => {
 });
 test('total 26 subnet', () => {
     expect(Template.fromStack(mainStack).resourceCountIs('AWS::EC2::Subnet', 26));
+=======
+describe('MainStack', () => {
+    test('snapshot MainStack', () => {
+        expect(Template.fromStack(mainStack)).toMatchSnapshot();
+    });
+>>>>>>> 6.igw
 });

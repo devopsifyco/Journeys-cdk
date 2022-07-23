@@ -1,3 +1,4 @@
 import { Vpc } from './vpc';
 import { SN } from './subnet';
-export { Vpc, SN };
+import { IGW } from './internet-gateway';
+export { Vpc, SN, IGW };

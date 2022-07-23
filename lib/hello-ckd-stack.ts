@@ -1,5 +1,5 @@
 import * as cdk from 'aws-cdk-lib';
-import { Vpc, SN } from './resources';
+import { Vpc, SN, IGW } from './resources';
 import { getConfig } from '../config/build-config';
 
 export class HelloCkdStack extends cdk.Stack {
@@ -14,5 +14,13 @@ export class HelloCkdStack extends cdk.Stack {
         // Subnet
         new SN(this, config.projectName, config.environment, `network`, vpc);
 
+        // Internet Gateway
+        const internetGateway = new IGW(
+            this,
+            config.projectName,
+            config.environment,
+            `network`,
+            vpc,
+        );
     }
 }
